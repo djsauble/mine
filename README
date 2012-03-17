@@ -4,6 +4,11 @@ Mine is a file registry, designed to provide proof about which files are yours.
 
 ## Usage
 
+```bash
+lein deps
+lein run
+```
+
 ## Required Packages
 
 ### Development
