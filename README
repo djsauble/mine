@@ -1,0 +1,19 @@
+# mine
+
+Mine is a file registry, designed to provide proof about which files are yours.
+
+## Usage
+
+## Required Packages
+
+### Development
+
+* Leiningren
+
+### Production
+
+## License
+
+Copyright (C) 2012 Daniel Sauble
+
+Distributed under the Eclipse Public License, the same as Clojure.
