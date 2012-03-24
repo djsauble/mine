@@ -6,8 +6,9 @@
 (defpage "/" []
   (common/site-layout
     [:h1 "Register File"]
-    [:form
-      [:input {:placeholder "Browse for a file" :readonly "true"}]
-      [:button "Browse"]
-    ]
-    ))
+    [:div.file
+      [:div#drag-n-drop.active
+        [:h2 "Drag files here"]]
+      [:form.browse
+        [:input {:placeholder "Browse for a file" :readonly "true"}]
+        [:button "Browse"]]]))
