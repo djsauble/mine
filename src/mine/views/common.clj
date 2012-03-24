@@ -10,3 +10,11 @@
               [:body
                [:div#wrapper
                 content]]))
+
+(defpartial site-layout [& content]
+  (html5
+    [:head
+      [:title "Mine Files"]]
+    [:body
+      [:div#wrapper
+        content]]))
