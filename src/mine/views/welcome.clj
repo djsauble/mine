@@ -7,8 +7,8 @@
   (common/site-layout
     [:h1 "Register File"]
     [:div.file
-      [:div#drag-n-drop.active
+      [:div#drag-n-drop
         [:h2 "Drag files here"]]
       [:form.browse
         [:input {:placeholder "Browse for a file" :readonly "true"}]
-        [:button "Browse"]]]))
+        [:button {:disabled "disabled"} "Register"]]]))
