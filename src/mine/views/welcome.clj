@@ -5,10 +5,10 @@
 
 (defpage "/" []
   (common/site-layout
-    [:h1 "Register File"]
+    [:h1 "Register PDF"]
     [:div.file
       [:div#drag-n-drop
         [:h2 "Drag files here"]]
       [:form.browse
-        [:input {:placeholder "Browse for a file" :readonly "true"}]
+        [:input {:placeholder "Drag and drop a PDF" :readonly "true"}]
         [:button {:disabled "disabled"} "Register"]]]))

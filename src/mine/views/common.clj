@@ -17,6 +17,7 @@
       [:title "Mine Files"]
       (include-css "/css/application.css")
       (include-js "/js/jquery-1.7.2.js")
+      (include-js "/js/sha256.js")
       (include-js "/js/application.js")]
     [:body
       [:div#wrapper
