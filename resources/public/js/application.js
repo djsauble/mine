@@ -2,7 +2,8 @@ $(document).ready(function() {
   if (window.FileReader) {
     addEventHandler(window, 'load', function() {
       var drop    = window
-      var browser = $('.browse input')
+      var browser = $('.browse #name')
+      var hash = $('.browse #hash')
 
       function cancel(e) {
         if (e.preventDefault) { e.preventDefault(); }
@@ -39,7 +40,7 @@ $(document).ready(function() {
           var fileReader = new FileReader
           fileReader.onload = (function(theFile) {
             var obj = new jsSHA(theFile.currentTarget.result, "ASCII")
-            console.log(obj.getHash("SHA-256", "HEX"))
+            hash.attr("value", obj.getHash("SHA-256", "HEX"))
           })
           fileReader.readAsText(file, "ASCII")
         }.bindToEventHandler(file))
