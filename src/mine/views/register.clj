@@ -14,6 +14,7 @@
         [:input {:id "hash" :name "hash" :type "hidden"}]
         [:button {:disabled "disabled"} "Register"]]]))
 
-(defpage [:post "/register"] []
+(defpage [:post "/register"] [:as file]
   (common/site-layout
-    [:h1 "You Just Registered a File"]))
+    [:h1 "You Just Registered a File"]
+    [:div.file (print-str (val (find file :name)) "has a fingerprint of" (val (find file :hash)))]))
